@@ -1,0 +1,279 @@
+body {
+    background-image: url("https://assets-prd.ignimgs.com/2022/03/22/monsterlab-1647987537605.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6); 
+    z-index: -1;
+}
+
+
+       
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: papyrus, sans-serif;
+            background: #000000;
+        }
+
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+nav {
+    background: #333333;
+    padding: 15px 30px;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.hero::before { background-image: url(/img/logohero.jpg);
+     background-size: cover; background-repeat: no-repeat; background-position: center;
+      content: "";
+       display: block;
+        position: absolute; 
+        top: 0; left: 0; width: 100%; height: 100%; z-index: -2; opacity: 0.4; } 
+
+
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.btn-primary {
+    background: #007bff;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: papyrus, sans-serif;
+}
+
+
+.btn-secondary {
+    background: #6c757d;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: papyrus, sans-serif;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+
+.flex-item {
+    flex: 1;
+    min-width: 300px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 20px;
+}
+
+
+.card img {
+    max-width: 100%;
+    display: block;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+
+.card-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+.card-body {
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.badge-success {
+    background: green;
+    color: white;
+}
+
+.badge-danger {
+    background: red;
+    color: white;
+}
+
+figure {
+    width: 30vw;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+
+figure img {
+    max-width: 100%;
+    display: block;
+}
+
+
+figcaption {
+    color: #555555;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+details {
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #f1f1f1;
+}
+
+
+summary {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+th {
+    background: #333333;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+
+td {
+    background: #b6b2b2;
+    padding: 12px;
+    text-align: left;
+}
+
+
+tbody tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+form {
+    max-width: 600px;
+    padding: 20px;
+    background: #f5f5f5;
+    margin: 20px auto;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background: #222222;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+dialog[popover] {
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border: none;
+}
+button[popovertarget] {
+    cursor: pointer;
+
+    body {
+    color: white;
+}
+
+
+
+
+}

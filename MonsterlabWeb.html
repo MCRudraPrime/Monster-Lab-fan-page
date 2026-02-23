@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+</head>
+<body>
+
+            <audio id="bg-music" loop>
+    <source src="audio/monsterlab.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    window.addEventListener('load', () => {
+        const audio = document.getElementById('bg-music');
+        audio.play().catch(() => {
+            console.log("Autoplay blocked. Click anywhere to start the music.");
+        });
+
+        // Play music on first click if autoplay is blocked
+        document.body.addEventListener('click', () => {
+            if (audio.paused) audio.play();
+        }, { once: true });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+    <nav>
+    <div class="container">
+        <a href="#">Home</a>
+        <a href="#">Experiments</a>
+        <a href="#">Creatures</a>
+        <a href="#">Battle Data</a>
+        <a href="#">Submit DNA</a>
+    </div>
+</nav> 
+<section class="hero">
+    <div class="container">
+        <h1>Monster Lab Research Log</h1>
+        <p>Confidential mutation records and battle experiments.</p>
+        <button class="btn-primary">Begin Experiment</button>
+        <a href="archives.html">
+    <button class="btn-secondary">View Archives</button>
+</a>
+    </div>
+</section>
+<section class="container flex-container">
+    
+    <div class="flex-item">
+        <div class="card">
+    <img src="https://cdnb.artstation.com/p/assets/images/images/013/615/665/large/brent-kirby-creature-screen-02.jpg?1540409258" 
+
+        </div class="card-header">
+        t0mmy-1 <br>
+        This Monster Has been designed using a mixutre of mechanical and biological parts, and is currently being repaired after battle damage. Battle readiness: unstable.
+
+    </div>
+
+    <div class="card-body">
+    </div>
+
+    <span class="badge badge-success">Stable</span>
+    <span class="badge badge-danger">High Risk</span>
+</div>
+    </div>
+
+    <div class="flex-item">
+        <div class="card">
+    <img src="https://img.freepik.com/premium-vector/television-screen-error-smpte-color-bars-vector-illustration_290125-107.jpg"
+
+    <div class="card-header">
+        Specimen ----096---- <br>
+        WARNING WARNING WARNING this creature has escape containment.<br>
+        it is currently loose and is dangerously intelligent. <br>
+        do not look at it's face do not look at it's face do not look at it's face
+    </div>
+
+    <div class="card-body">
+    </div>
+
+    <span class="badge badge-success">Error</span>
+    <span class="badge badge-danger">Escaped</span>
+</div>
+    </div>
+
+    </section>
+
+<figure>
+    <img src="img/Ocular_Blaster.webp" alt="Ocular Blaster">
+    <figcaption>Recovered Part #17 Ocular Blaster: This Alchemical Part was recovered from an escaped specimen. </figcaption>
+</figure>
+
+<details>
+    <summary>Experimental Notes From MSA</summary>
+    <h1>0/1/20342.</h1>
+    <p> Please note today is Cobbilshire's birthday thought it doesnt matter who you vote for the damn vampire will win again.</p>
+</details>
+
+<details>
+    <summary>Experimental Results</summary>
+    <p>Monster #A-47 stabilized after 3 days of incubation.</p>
+</details>
+
+<table>
+    <thead>
+        <tr>
+            <th>Monster</th>
+            <th>Strength</th>
+            <th>Speed</th>
+            <th>Body Integrity %</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>#A-47</td>
+            <td>80</td>
+            <td>60</td>
+            <td>75%</td>
+        </tr>
+        <tr>
+            <td>#B-21</td>
+            <td>65</td>
+            <td>90</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>#t0mmy-1</td>
+            <td>70</td>
+            <td>100</td>
+            <td>40%</td>
+        </tr>
+    </tbody>
+</table>
+
+<form>
+    <label for="monster-name">Monster Name</label>
+    <input type="text" id="monster-name" name="monster-name">
+
+    <label for="dna-sample">DNA Sample</label>
+    <input type="text" id="dna-sample" name="dna-sample">
+
+    <button class="btn-primary">Submit</button>
+</form>
+<footer>
+    <p>MAD SCIENCE ALLIANCE &copy; 2026 | All Rights Reserved</p>
+</footer>
+
+<button popovertarget="containment-dialog">Trigger Containment Alert</button>
+
+<dialog popover id="containment-dialog">
+    <p>Emergency: Containment breach detected!</p>
+    <button popovertarget>Close</button>
+</dialog>
+
+</body>
+</html>
